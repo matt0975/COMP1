@@ -1,3 +1,11 @@
+/***********************************************
+Author: Matthew Wagner
+Date: 02/04/2021
+Purpose: To show our understanding of the printf statement and the other placeholders you can use such as %f, %c, etc.
+Sources of Help: The PDF File and my brain
+Time Spent: 15 minutes
+***********************************************/
+
 /*
  Computing I -- COMP.1010 Honor Statement
  
@@ -5,7 +13,7 @@
  good order in the classroom, providing an enriching learning
  experience for students, and as training as a practicing computing
  professional upon graduation.  This practice is manifested in the
- University's Academic Integrity policy. Students are expected to
+ University’s Academic Integrity policy. Students are expected to
  strictly avoid academic dishonesty and adhere to the Academic
  Integrity policy as outlined in the course catalog.  Violations
  will be dealt with as outlined therein.
@@ -19,33 +27,22 @@
  course academic policy on the course website on Blackboard, and
  the UMass Lowell academic code.
  
- Date: 1/28/2021
+ Date: 02/04/2021
  Name: Matthew Wagner
  */
-
-/***********************************************
- Author: Matthew Wagner
- Date: 1/28/2021
- Purpose: to become familiar with zyLab to finish programming assignments
- Sources of Help: None, just my brain
- 
- Time Spent: about 10 minutes
- 
- ***********************************************/
 /*
 #include <stdio.h>
 
-int main(int argc, char* argv[]) {
-    int userNum;
-    int userNumSquared;
+int main(int argc, char * argv[]){
     
-    scanf("%d", &userNum);
+    printf("%d is an integer and should be printed using %%d.\n\n", 57);
     
-    userNumSquared = userNum * userNum;     // Bug here; fix it when instructed
-                                            //-- Fixed by changing + for *  --Matt
+    printf("The character '%c' can be printed using %%c.\n\n", '%');
     
-    printf("%d\n", userNumSquared);         // Output formatting issue here; fix it when instructed
-                                            //-- Fixed by putting \n after the %d   --Matt
+    printf("Floating point numbers use %%f. %0.6f is an example.\n\n", 3.14159);
+    
+    printf("Using placeholder %%%0.1ff can display the value of %c number to an accuracy %s.\n", 5.2, 'a', "of two decimal places");
+    
     return 0;
 }
 */

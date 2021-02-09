@@ -1,11 +1,24 @@
 /*
+  Author: Matthew Wagner
+  
+  Date: 01/30/2021
+  
+  Purpose: The purpose is to show what the executable path would be for the program, incase you need to run command line
+           arguments. Also it shows the functionality of printf and %s as well as seeing that argv[0] is ./a.out
+  
+  Sources of Help: The Day2.pdf and my brain
+  
+  Time Spent: About 10 minutes, took more time copying the code and writing this than understanding what it does.
+ */
+
+/*
  Computing I -- COMP.1010 Honor Statement
  
  The practice of good ethical behavior is essential for maintaining
  good order in the classroom, providing an enriching learning
  experience for students, and as training as a practicing computing
  professional upon graduation.  This practice is manifested in the
- University's Academic Integrity policy. Students are expected to
+ University’s Academic Integrity policy. Students are expected to
  strictly avoid academic dishonesty and adhere to the Academic
  Integrity policy as outlined in the course catalog.  Violations
  will be dealt with as outlined therein.
@@ -19,33 +32,22 @@
  course academic policy on the course website on Blackboard, and
  the UMass Lowell academic code.
  
- Date: 1/28/2021
+ Date: 01/30/2021
  Name: Matthew Wagner
  */
-
-/***********************************************
- Author: Matthew Wagner
- Date: 1/28/2021
- Purpose: to become familiar with zyLab to finish programming assignments
- Sources of Help: None, just my brain
  
- Time Spent: about 10 minutes
+ /*
+  Author    : Matthew Wagner
+  Date      : 01/30/2021
+  Output    : This program has the executable name: ./a.out
+              That is all!
+ */
+ /*
+ #include <stdio.h>
  
- ***********************************************/
-/*
-#include <stdio.h>
-
-int main(int argc, char* argv[]) {
-    int userNum;
-    int userNumSquared;
-    
-    scanf("%d", &userNum);
-    
-    userNumSquared = userNum * userNum;     // Bug here; fix it when instructed
-                                            //-- Fixed by changing + for *  --Matt
-    
-    printf("%d\n", userNumSquared);         // Output formatting issue here; fix it when instructed
-                                            //-- Fixed by putting \n after the %d   --Matt
+ int main(int argc, char * argv[]){
+    printf("This program has the executable name: %s\n", argv[0]);
+    printf("That is all!\n");
     return 0;
-}
+ }
 */

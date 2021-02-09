@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		632DB87425C38AE90073E2BE /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 632DB87325C38AE90073E2BE /* main.c */; };
+		632DB87D25C600300073E2BE /* Daily02.c in Sources */ = {isa = PBXBuildFile; fileRef = 632DB87C25C600300073E2BE /* Daily02.c */; };
+		63C8DA9125CB05D9005C20B9 /* Daily03.c in Sources */ = {isa = PBXBuildFile; fileRef = 63C8DA9025CB05D9005C20B9 /* Daily03.c */; };
+		63C8DA9525CCAED3005C20B9 /* Daily04.c in Sources */ = {isa = PBXBuildFile; fileRef = 63C8DA9425CCAED3005C20B9 /* Daily04.c */; };
+		63C8DA9B25CE1A32005C20B9 /* Daily05.c in Sources */ = {isa = PBXBuildFile; fileRef = 63C8DA9A25CE1A32005C20B9 /* Daily05.c */; };
+		63C8DAA625D1A133005C20B9 /* Daily06.c in Sources */ = {isa = PBXBuildFile; fileRef = 63C8DAA525D1A133005C20B9 /* Daily06.c */; };
+		63C8DAA925D2D628005C20B9 /* Daily07.c in Sources */ = {isa = PBXBuildFile; fileRef = 63C8DAA825D2D628005C20B9 /* Daily07.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,12 @@
 /* Begin PBXFileReference section */
 		632DB87025C38AE90073E2BE /* Daily01 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Daily01; sourceTree = BUILT_PRODUCTS_DIR; };
 		632DB87325C38AE90073E2BE /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		632DB87C25C600300073E2BE /* Daily02.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Daily02.c; sourceTree = "<group>"; };
+		63C8DA9025CB05D9005C20B9 /* Daily03.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Daily03.c; sourceTree = "<group>"; };
+		63C8DA9425CCAED3005C20B9 /* Daily04.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Daily04.c; sourceTree = "<group>"; };
+		63C8DA9A25CE1A32005C20B9 /* Daily05.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Daily05.c; sourceTree = "<group>"; };
+		63C8DAA525D1A133005C20B9 /* Daily06.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Daily06.c; sourceTree = "<group>"; };
+		63C8DAA825D2D628005C20B9 /* Daily07.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Daily07.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,12 @@
 			isa = PBXGroup;
 			children = (
 				632DB87325C38AE90073E2BE /* main.c */,
+				632DB87C25C600300073E2BE /* Daily02.c */,
+				63C8DA9025CB05D9005C20B9 /* Daily03.c */,
+				63C8DA9425CCAED3005C20B9 /* Daily04.c */,
+				63C8DA9A25CE1A32005C20B9 /* Daily05.c */,
+				63C8DAA525D1A133005C20B9 /* Daily06.c */,
+				63C8DAA825D2D628005C20B9 /* Daily07.c */,
 			);
 			path = Daily01;
 			sourceTree = "<group>";
@@ -119,6 +137,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				632DB87425C38AE90073E2BE /* main.c in Sources */,
+				63C8DAA925D2D628005C20B9 /* Daily07.c in Sources */,
+				63C8DA9B25CE1A32005C20B9 /* Daily05.c in Sources */,
+				63C8DA9525CCAED3005C20B9 /* Daily04.c in Sources */,
+				632DB87D25C600300073E2BE /* Daily02.c in Sources */,
+				63C8DA9125CB05D9005C20B9 /* Daily03.c in Sources */,
+				63C8DAA625D1A133005C20B9 /* Daily06.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
