@@ -31,10 +31,8 @@ const char* smile(){
 
 int main(int argc, char * argv[]){
     printf("%s", smile());
-    return 0;
     
-    //This is a test
-    // Test 3
+    return 0;
 }
 
 /*
