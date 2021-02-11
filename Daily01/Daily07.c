@@ -22,24 +22,25 @@ and the UMass Lowell academic code.
 Date: 02/09/2021
 Name: Matthew Wagner
 ***********************************************/
-
+/*
 #include <stdio.h>
 
-const char* smile(){
-    return "  ****\n * . .*\n*      *\n*  \\_/ *\n *    *\n  ****\n\n";
-}
+void smile(void);
 
-int main(int argc, char * argv[]){
-    printf("%s", smile());
-    
+int main(int argc, char* argv[]){
+    // Invoke Function
+    smile();
+    smile();
+    smile();
     return 0;
 }
 
-/*
-printf("  ****\n");
-printf(" * . .*\n");
-printf("*      *\n");
-printf("*  \\_/ *\n");
-printf(" *    *\n");
-printf("  ****\n\n");
+void smile(void){
+    printf("  ****\n");
+    printf(" * . .*\n");
+    printf("*      *\n");
+    printf("*  \\_/ *\n");
+    printf(" *    *\n");
+    printf("  ****\n\n");
+}
 */
