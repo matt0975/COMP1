@@ -25,6 +25,7 @@ Name: Matthew Wagner
 /*
 #include <stdio.h>
 
+ // function prototype
 void smile(void);
 
 int main(int argc, char* argv[]){
@@ -35,6 +36,7 @@ int main(int argc, char* argv[]){
     return 0;
 }
 
+ // Write function
 void smile(void){
     printf("  ****\n");
     printf(" * . .*\n");
