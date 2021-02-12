@@ -32,12 +32,18 @@ int main(int argc, char* argv[]){
     printf("Please enter a positive integer: ");
     scanf("%d", &number);
     loopDownToZero(number);
+    printf("****\n");
+    
     //printf("This is your number: %d", number);
     
     return 0;
 }
 
 void loopDownToZero(int userNum){
+    while(userNum >= 0){
+        printf("%d\n", userNum);
+        userNum -= 1;
+    }
     
 }
 
