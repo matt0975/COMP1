@@ -31,7 +31,9 @@ void smile(void);
 int main(int argc, char* argv[]){
     // Invoke Function
     smile();
+    printf("\n\n");
     smile();
+    printf("\n\n");
     smile();
     return 0;
 }
@@ -43,6 +45,6 @@ void smile(void){
     printf("*      *\n");
     printf("*  \\_/ *\n");
     printf(" *    *\n");
-    printf("  ****\n\n");
+    printf("  ****\n");
 }
 */
