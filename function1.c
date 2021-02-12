@@ -16,14 +16,25 @@ int main(int argc, const char* argv[]){
     // Step 1: Call/Invoke the function
     drawHouse();
     
-    // Function with one parameter - parameter type is a character
+    int totalHouses;
+    printf("Please enter a number of times to draw a house: ");
+    scanf("%d", &totalHouses);
+    printf("You entered: %d\n", totalHouses);
+    drawMultipleHouses(totalHouses);
+    
+    
+    int userNum;
+    printf("Enter a number to be divided by 2: ");
+    scanf("%d", &userNum);
+    while ((userNum /= 2) > 0) {
+        printf("%d\n", userNum);
+    }
+ /*   // Function with one parameter - parameter type is a character
     char roof;
     printf("Please enter a roof: ");
     scanf("%c", &roof);
     printf("You entered: %c\n", roof);
-    drawFancyHouse(roof);
-    
-    drawMultipleHouses(4);
+    drawFancyHouse(roof); */
     
     return 0;
 }
@@ -42,4 +53,9 @@ void drawFancyHouse(char aRoof){
 
 void drawMultipleHouses(int totalHouses){
     
+    int numOfHouses = 0;
+    while(numOfHouses < totalHouses){
+        drawHouse();
+        numOfHouses += 1;
+    }
 }
