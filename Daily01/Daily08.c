@@ -1,7 +1,7 @@
 /***********************************************
 Author: Matthew Wagner
 Date: 02/12/2021
-Purpose: Use function to hold a while loop to allow an entered integer to count down from its current state to zero
+Purpose: Use function to hold a while loop to allow an entered integer to count down from its current state to zero and count back to that entered number
 Sources of Help: PDF and my brain
 Time Spent: About 15 min
 ***********************************************/
@@ -25,25 +25,33 @@ Name: Matthew Wagner
 
 #include <stdio.h>
 void loopDownToZero(int userNum);
+void loopUpToInt(int userNum);
 
 int main(int argc, char* argv[]){
-    // Invoke function
     int number;
     printf("Please enter a positive integer: ");
     scanf("%d", &number);
     loopDownToZero(number);
     printf("****\n");
-    
-    //printf("This is your number: %d", number);
+    loopUpToInt(number);
     
     return 0;
 }
 
+// loopDownToZero function
 void loopDownToZero(int userNum){
     while(userNum >= 0){
         printf("%d\n", userNum);
         userNum -= 1;
     }
-    
 }
 
+// loopUpToInt function
+void loopUpToInt(int userNum){
+    int number = 0;
+    while(number != userNum){
+        printf("%d\n", number);
+        number += 1;
+    }
+    printf("%d\n", number);
+}
