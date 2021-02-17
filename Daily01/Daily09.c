@@ -26,29 +26,30 @@ Name: Matthew Wagner
 #include <stdio.h>
 
 void clearKeyboardBuffer(void);
-void getNegInt(void);
+int getNegInt(void);
 
 int main(int argc, const char* argv[]){
     
-    getNegInt();
+    int in;
+    in = getNegInt();
+    printf("%d\n", in);
     return 0;
 }
 
-void getNegInt(void){
+int getNegInt(){
     
     int input, inputNum;
-    //printf("Please enter a negative number: ");
+    printf("Please enter a negative number: ");
     inputNum = scanf("%d", &input);
-    //printf("You chose: %d\n", input);
     clearKeyboardBuffer();
     
     while(inputNum == 0 || input >= 0){
-        printf("I'm sorry, you must enter a negative integer less than zero:\n");
+        printf("I'm sorry, you must enter a negative integer less than zero: ");
         inputNum = scanf("%d", &input);
-        //printf("You chose: %d\n", input);
         clearKeyboardBuffer();
     }
     printf("I got the number %d!\n", input);
+    return inputNum;
 }
 
 void clearKeyboardBuffer(void){
