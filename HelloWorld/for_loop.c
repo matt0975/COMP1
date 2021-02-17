@@ -6,12 +6,16 @@
 //
 
 #include <stdio.h>
+
 void exit(int status);
 void clearKeyboardBuffer(void);
+void drawHouse(void);
+void drawMultipleHouses_for(int totalHouses);
 
 int main(int argc, const char* argv[]){
     
-    int input, numOfConversion;
+    drawMultipleHouses_for(3);
+    /*int input, numOfConversion;
     printf("Please enter 100: ");
     numOfConversion = scanf("%d", &input);
     clearKeyboardBuffer();
@@ -28,7 +32,7 @@ int main(int argc, const char* argv[]){
     }
     printf("You entered %d\n", input);
      
-    
+
     // SCAN MULTIPLE INPUTS
     int num1 = -9999, num2 = -9999, numOfCon;
     
@@ -36,7 +40,24 @@ int main(int argc, const char* argv[]){
     numOfCon = scanf("%d %d", &num1, &num2);            //Scanf scans in until a character is typed
     printf("%d numbers read from the keyboard: %d and %d.\n", numOfCon, num1, num2);
     clearKeyboardBuffer();
+    
+*/
     return 0;
+}
+
+void drawHouse()
+{
+    printf("/ \\\n");
+    printf("|_|\n\n");
+}
+
+void drawMultipleHouses_for(int totalHouses)
+{
+    int loop_counter;
+    for(loop_counter = 0; loop_counter <= totalHouses; loop_counter++)
+    {
+        drawHouse();
+    }
 }
 
 //Want this after each scanf to prevent inifinite loops
@@ -49,3 +70,5 @@ void clearKeyboardBuffer(void){
         scanf("%c", &ch);
     }
 }
+
+
