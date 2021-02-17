@@ -4,6 +4,7 @@
 //
 //  Created by Matthew Wagner on 2/10/21.
 //
+/*
 #include <stdio.h>
 
 // Step 3: Declare Function (writing the function prototype)
@@ -29,12 +30,12 @@ int main(int argc, const char* argv[]){
     while ((userNum /= 2) > 0) {
         printf("%d\n", userNum);
     }
- /*   // Function with one parameter - parameter type is a character
+    // Function with one parameter - parameter type is a character
     char roof;
     printf("Please enter a roof: ");
     scanf("%c", &roof);
     printf("You entered: %c\n", roof);
-    drawFancyHouse(roof); */
+    drawFancyHouse(roof); 
     
     return 0;
 }
@@ -59,3 +60,4 @@ void drawMultipleHouses(int totalHouses){
         numOfHouses += 1;
     }
 }
+*/
