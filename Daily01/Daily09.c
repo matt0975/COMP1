@@ -1,9 +1,9 @@
 /***********************************************
 Author: Matthew Wagner
-Date: 02/12/2021
-Purpose: Use function to hold a while loop to allow an entered integer to count down from its current state to zero and count back to that entered number
+Date: 02/16/2021
+Purpose: Practice loops more and get fimilar with the clearBuffer
 Sources of Help: PDF and my brain
-Time Spent: About 15 min
+Time Spent: About 20 min
 ***********************************************/
 
 /***********************************************
@@ -19,40 +19,44 @@ permitted except the instructor and approved tutors.
 I certify that the work submitted with this assignment is mine and was generated in a manner
 consistent with this document, the course academic policy on the course website on Blackboard,
 and the UMass Lowell academic code.
-Date: 02/12/2021
+Date: 02/16/2021
 Name: Matthew Wagner
 ***********************************************/
-/*
-#include <stdio.h>
-void loopDownToZero(int userNum);
-void loopUpToInt(int userNum);
 
-int main(int argc, char* argv[]){
-    int number;
-    printf("Please enter a positive integer: ");
-    scanf("%d", &number);
-    loopDownToZero(number);
-    printf("****\n");
-    loopUpToInt(number);
+#include <stdio.h>
+
+void clearKeyboardBuffer(void);
+void getNegInt(void);
+
+int main(int argc, const char* argv[]){
     
+    getNegInt();
     return 0;
 }
 
-// loopDownToZero function
-void loopDownToZero(int userNum){
-    while(userNum >= 0){
-        printf("%d\n", userNum);
-        userNum -= 1;
+void getNegInt(void){
+    
+    int input, inputNum;
+    //printf("Please enter a negative number: ");
+    inputNum = scanf("%d", &input);
+    //printf("You chose: %d\n", input);
+    clearKeyboardBuffer();
+    
+    while(inputNum == 0 || input >= 0){
+        printf("I'm sorry, you must enter a negative integer less than zero:\n");
+        inputNum = scanf("%d", &input);
+        //printf("You chose: %d\n", input);
+        clearKeyboardBuffer();
     }
+    printf("I got the number %d!\n", input);
 }
 
-// loopUpToInt function
-void loopUpToInt(int userNum){
-    int number = 0;
-    while(number != userNum){
-        printf("%d\n", number);
-        number += 1;
+void clearKeyboardBuffer(void){
+    char ch;
+    scanf("%c", &ch);
+    
+    //Keep reading until we reach a new line or a "null" character
+    while(ch != '\n' && ch != '\0'){
+        scanf("%c", &ch);
     }
-    printf("%d\n", number);
 }
-*/
