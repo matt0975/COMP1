@@ -22,7 +22,6 @@ and the UMass Lowell academic code.
 Date: 02/16/2021
 Name: Matthew Wagner
 ***********************************************/
-
 #include <stdio.h>
 
 void clearKeyboardBuffer(void);
@@ -30,9 +29,7 @@ int getNegInt(void);
 
 int main(int argc, const char* argv[]){
     
-    int in;
-    in = getNegInt();
-    printf("%d\n", in);
+    getNegInt();
     return 0;
 }
 
@@ -41,7 +38,6 @@ int getNegInt(void){
     int input, inputNum;
     //printf("Please enter a negative number: ");
     inputNum = scanf("%d", &input);
-    //clearKeyboardBuffer();
     
     while(inputNum == 0 || input >= 0){
         printf("I'm sorry, you must enter a negative integer less than zero: ");
