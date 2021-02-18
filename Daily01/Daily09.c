@@ -36,12 +36,12 @@ int main(int argc, const char* argv[]){
     return 0;
 }
 
-int getNegInt(){
+int getNegInt(void){
     
     int input, inputNum;
-    printf("Please enter a negative number: ");
+    //printf("Please enter a negative number: ");
     inputNum = scanf("%d", &input);
-    clearKeyboardBuffer();
+    //clearKeyboardBuffer();
     
     while(inputNum == 0 || input >= 0){
         printf("I'm sorry, you must enter a negative integer less than zero: ");
