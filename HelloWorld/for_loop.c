@@ -4,7 +4,7 @@
 //
 //  Created by Matt Wagner on 2/16/21.
 //
-
+/*
 #include <stdio.h>
 
 void exit(int status);
@@ -41,7 +41,7 @@ int main(int argc, const char* argv[]){
     printf("%d numbers read from the keyboard: %d and %d.\n", numOfCon, num1, num2);
     clearKeyboardBuffer();
     
-*/
+
     return 0;
 }
 
@@ -72,3 +72,4 @@ void clearKeyboardBuffer(void){
 }
 
 
+*/
