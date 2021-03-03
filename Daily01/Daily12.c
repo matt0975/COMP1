@@ -1,9 +1,9 @@
 /***********************************************
 Author: Matthew Wagner
-Date: 02/18/2021
+Date: 03/02/2021
 Purpose: Practice for loops more and get fimilar with printing characters
 Sources of Help: PDF and my brain
-Time Spent: About 20 min
+Time Spent: About 1 hour
 ***********************************************/
 
 /***********************************************
@@ -19,52 +19,30 @@ permitted except the instructor and approved tutors.
 I certify that the work submitted with this assignment is mine and was generated in a manner
 consistent with this document, the course academic policy on the course website on Blackboard,
 and the UMass Lowell academic code.
-Date: 02/18/2021
+Date: 02/26/2021
 Name: Matthew Wagner
 ***********************************************/
-/*
 #include <stdio.h>
-void clearKeyboardBuffer(void);
-void drawLine(int count, char ch);
 
-int main(int argc, char * argv[]){
-    //getNumChar();
-    char userChar;
-    int userCount = 0;
-    printf("Please enter the character you want to draw:\n");
-    userChar = getchar();
-    printf("Please enter the number of characters you want in your line:\n");
-    scanf("%d", &userCount);
+int main(int argc, const char* argv[])
+{
+    double num = 0, sum = 0, count = 0;
     
-    while(userCount >= 79 || userCount <= 0){
-        printf("I'm sorry, that number is unrecognized or out of range, try [1-79]:\n");
-        if(scanf("%d", &userCount) != 1){
-            while ((getchar() != '\n')){
-                userCount = 0;
-            }
-        }
-        //clearKeyboardBuffer();
+    printf("Enter a number (or stop to quit):\n");
+    int result = scanf("%lf", &num);
+    while(result == 1)
+    {
+        sum = sum + num;
+        count = count + 1;
+        printf("Enter a number (or stop to quit):\n");
+        result = scanf("%lf", &num);
     }
-    drawLine(userCount, userChar);
+    if (count >= 0) {
+        printf("The sum is: %.2lf, average is: %.2lf\n", sum, sum / count);
+    }
+    else {
+        printf("No sum and average calculated!\n");
+    }
     return 0;
 }
 
-void drawLine(int count, char ch){
-    for(int input = 0; input < count; input++)
-    {
-        printf("%c", ch);
-    }
-    printf("\n");
-    //return;
-}
-
-void clearKeyboardBuffer(void){
-    char ch;
-    scanf("%c", &ch);
-    
-    //Keep reading until we reach a new line or a "null" character
-    while(ch != '\n' && ch != '\0'){
-        scanf("%c", &ch);
-    }
-}
-*/
