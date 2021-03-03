@@ -4,13 +4,13 @@
 //
 //  Created by Matt Wagner on 2/24/21.
 //
-
+/*
 #include <stdio.h>
 void clearKeyboardBuffer(void);
 
 int main(int argc, const char* argv[])
 {
-/*
+
     double realNum = 12345.678;
     
     printf("float: %f\n", realNum);
@@ -41,7 +41,7 @@ int main(int argc, const char* argv[])
     
     average = totalScore / numScore;        //if total score was an int, cast it as a double to fix
     printf("Your average is %0.2lf\n", average);    // 0.2lf means print 2 decimal places
-*/
+
     printf("I'm printing a character using '%c' using the capital letter A.\n", 'A');
     printf("I'm printing a character using '%c' using the capital letter A.\n", 65);
 
@@ -61,4 +61,4 @@ void clearKeyboardBuffer(void){
         scanf("%c", &ch);
     }
 }
-
+*/
