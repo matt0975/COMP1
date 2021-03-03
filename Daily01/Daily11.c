@@ -55,12 +55,6 @@ int getThrow(char ch1){
     //printf("%c\n", ch1);
     
     
-   /* while(ch1 != 'r' || ch1 != 'R' || ch1 != 'p' || ch1 != 'P' || ch1 != 's' || ch1 != 'S'){
-    printf("Player-%d, please enter your choice <p>aper, <r>ock, or <s>cissors:\n", ch1);
-    scanf(" %c", &ch1);
-    clearKeyboardBuffer();
-    printf("%c\n", ch1);
-     }
      
      
     return ch1;

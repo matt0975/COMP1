@@ -37,7 +37,7 @@ int main(int argc, const char* argv[])
         printf("Enter a number (or stop to quit):\n");
         result = scanf("%lf", &num);
     }
-    if (count >= 0) {
+    if (count != 0) {
         printf("The sum is: %.2lf, average is: %.2lf\n", sum, sum / count);
     }
     else {
