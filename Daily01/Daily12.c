@@ -22,6 +22,7 @@ and the UMass Lowell academic code.
 Date: 02/26/2021
 Name: Matthew Wagner
 ***********************************************/
+/*
 #include <stdio.h>
 
 int main(int argc, const char* argv[])
@@ -45,4 +46,4 @@ int main(int argc, const char* argv[])
     }
     return 0;
 }
-
+*/

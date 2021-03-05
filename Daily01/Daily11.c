@@ -22,17 +22,7 @@ and the UMass Lowell academic code.
 Date: 02/26/2021
 Name: Matthew Wagner
 ***********************************************/
-
 /*
- First of all, declaring variables outside of main() so that all functions in the file can access it is not a good practice. Unless you really need to declare those variables as ‘global’, they should not be outside of main().
-  
- Now, look at the excerpt above. It says, the getThrow() should be given a player. Inside the function, you will ask that player to provide an input and once you get a valid input, you return that input.
-  
- Your checkWinner() function will be given the 2 throws of the 2 players which means it should have 2 arguments carrying these 2 pieces of info.
-  
- In your getThrow() and checkWinner() functions, there are no arguments in either one of them. You are not following instructions.
- 
-
 #include <stdio.h>
 
 void clearKeyboardBuffer(void);
