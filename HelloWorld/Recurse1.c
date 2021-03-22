@@ -4,7 +4,7 @@
 //
 //  Created by Matt Wagner on 3/10/21.
 //
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -27,7 +27,7 @@ int factorial(int num){
     }
     return product;
 }
-*/
+
 
 // Recursive (5 * 4 * 3 * 2 * 1 = 120)
 int factorial(int num){
@@ -35,3 +35,4 @@ int factorial(int num){
         return 1;
     return (num * factorial(num - 1));
 }
+*/
