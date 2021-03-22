@@ -75,7 +75,7 @@ int getThrow(int playerName) {
 }
 
 int checkWinner(char ch1, char ch2) {
-    int win;
+    int win = 0;
     if (ch1 == ch2) {
         win = printf("Draw, nobody wins.\n");
         }
