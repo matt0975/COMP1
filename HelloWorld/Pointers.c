@@ -4,7 +4,7 @@
 //
 //  Created by Matt Wagner on 3/17/21.
 //
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -41,3 +41,4 @@ void swapPassByReference(char *ch3, char *ch4){
     *ch4 = temp;
     printf("After swapping inside swapPassByReference, ch3 = %c, ch4 = %c, pointer ch3 = %d, pointer ch4 = %d \n", *ch3, *ch4, ch3, ch4);
 }
+*/
