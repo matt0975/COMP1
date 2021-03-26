@@ -1,6 +1,6 @@
 /***********************************************
 Author: Matthew Wagner
-Date: 03/21/2021
+Date: 03/25/2021
 Purpose:
 Sources of Help: PDF and my brain
 Time Spent: About 1 hour
@@ -27,56 +27,52 @@ Time Spent: About 1 hour
  course academic policy on the course website on Blackboard, and
  the UMass Lowell academic code.
  
- Date: 03/21/2021
+ Date: 03/25/2021
  Name: Matthew Wagner
  */
-/*
+
 #include <stdio.h>
 
-const double interestRate = 1.5;
-const double monthlyPayment = 50.0;
+void convertLengths(void);
+void convertWeights(void);
+void Exit(void);
 
-int main()
-{
-   double cost;
+int main() {
 
-   while(1) {
-      printf("Enter the cost (>500.00):\n");
-      scanf("%lf", &cost);
+   int ch;
 
-      if (cost > 500) {
+   do {
+      printf("1. convert lengths\n");
+      printf("2. convert weights\n");
+      printf("0. Exit\n");
+      printf("Please choose from (1, 2, 0):\n");
+      scanf("%d", &ch);
+
+      switch(ch) {
+
+         case 1:
+         convertLengths();
          break;
-      }
-      else {
-         continue;
-      }
-   }
 
-   int months = 0;
-   double totalInterestPaid = 0.0;
-
-   while(1) {
-      double currentInterest = (interestRate * cost) / 100.0;
-      cost = cost + currentInterest;
-      totalInterestPaid += currentInterest;
-
-      if (cost > monthlyPayment) {
-         months ++;
-         cost = cost - monthlyPayment;
-      }
-      else {
+         case 2:
+         convertWeights();
          break;
+
+         case 0:
+         Exit();
       }
    }
-
-   if (cost > 0.0) {
-      months++;
-   }
-
-   printf("It takes %d months to pay off the loan.\n", months);
-   printf("The total amount of interest paid is:%.2lf.\n", totalInterestPaid);
-   printf("The amount of final payment is:%.2lf.", cost);
-
-   return 0;
+   while (ch != 0);
 }
-*/
+
+void convertLengths(void) {
+   printf("The user wants to convert lengths.\n\n\n");
+}
+
+void convertWeights(void) {
+   printf("The user wants to convert weights.\n\n\n");
+}
+
+void Exit(void) {
+   printf("User chose to exit.\n");
+}
